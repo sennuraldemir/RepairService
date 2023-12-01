@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onarim33"
+    android:orientation="vertical"
+    tools:context=".RPR_YedekParca">
+
+    <include layout="@layout/baslik"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/edit"
+                android:text="Mevcut Yedek Parça Tipleri: "
+                android:textAlignment="center"
+                android:textSize="20dp" />
+            <Spinner
+                android:id="@+id/spn_yedekparcatip"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/grey"
+                android:dropDownVerticalOffset="80dp"
+                android:dropDownSelector="@color/gri2"
+                android:popupBackground="@color/gri2"
+                android:scrollbarSize="100sp"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/edit"
+                android:text="Mevcut Yedek Parçalar: "
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spn_parcamarka"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/grey"
+                android:dropDownVerticalOffset="80dp"
+                android:dropDownSelector="@color/gri2"
+                android:popupBackground="@color/gri2"
+                android:scrollbarSize="100sp"
+                android:textAlignment="center" />
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/modelegoreparca_rapor"
+                android:layout_width="match_parent"
+                android:layout_height="700dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#EA1313</color>
+    <color name="blue">#2196F3</color>
+    <color name="green">#8BC34A</color>
+    <color name="orange">#EC920F</color>
+    <color name="grey">#615F5F</color>
+    <color name="pudra">#F6CDA9</color>
+    <color name="mor">#A99CBC</color>
+
+    <color name="mavi1">#6FA9D6</color>
+    <color name="mavi2">#3B87C3</color>
+    <color name="mavi3">#0A4D81</color>
+    <color name="turuncu">#F49D2E</color>
+    <color name="turuncu2">#DC6F4D</color>
+    <color name="eflatun">#C057DC</color>
+    <color name="krem">#EBE7E0</color>
+    <color name="mavi">#A2CDEF</color>
+    <color name="gri2">#58758C</color>
+
+    <color name="edit">#98989C</color>
+
+</resources>

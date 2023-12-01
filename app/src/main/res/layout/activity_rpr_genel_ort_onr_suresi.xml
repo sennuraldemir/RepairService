@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/onarim33"
+    tools:context=".RPR_Genel_Ort_Onr_Suresi">
+
+    <include layout="@layout/baslik"/>
+
+    <TextView
+        android:id="@+id/GnlOrtOnrSureTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/edit"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/GnlOrtOnrSureTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/edit"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent"
+        android:id="@+id/ort_OnrSayi">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+</LinearLayout>

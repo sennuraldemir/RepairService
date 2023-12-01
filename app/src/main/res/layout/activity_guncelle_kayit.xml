@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YeniCihazKayit"
+    android:background="@drawable/onarim33"
+    android:orientation="vertical">
+
+    <include layout="@layout/baslik"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/envno_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="#BBE3F6"
+                android:hint=" Envanter No Giriniz:"
+                android:textSize="30dp"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_markaid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/mavi3"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/white"
+                    android:popupBackground="@color/white"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/mavi1"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_modelid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/mavi3"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/white"
+                    android:popupBackground="@color/white"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/mavi1"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_isyeriid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/mavi3"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/white"
+                    android:popupBackground="@color/white"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/mavi1"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_surumid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/mavi3"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/white"
+                    android:popupBackground="@color/white"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/mavi1"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_ekkranid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/mavi3"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/white"
+                    android:popupBackground="@color/white"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/mavi1"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/imeino_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="#BBE3F6"
+                android:hint=" İmei No Giriniz:"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/gsmno_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="#BBE3F6"
+                android:hint=" GSMNo Giriniz:"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/aciklama_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="#BBE3F6"
+                android:hint=" Açıklama Giriniz:"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </EditText>
+
+            <Button
+                android:id="@+id/guncelle_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Güncelle"
+                android:backgroundTint="@color/mavi2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

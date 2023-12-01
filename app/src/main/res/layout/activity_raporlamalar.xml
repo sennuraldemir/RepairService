@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Raporlar"
+    android:background="@drawable/onarim33"
+    android:orientation="vertical">
+
+    <include layout="@layout/baslik"/>
+
+
+    <Button
+        android:id="@+id/toplam_onarim_sayisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toplam Onarim Sayisi"
+        android:backgroundTint="@color/gri2"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/ort_onr_masrafi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ortalama Onarim Masrafi (Genel)"
+        android:backgroundTint="@color/eflatun"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/ort_onr_suresi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ortalama Onarim Süresi (Genel)"
+        android:backgroundTint="@color/eflatun"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/ariza_onr_masraf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ortalama Onarım Masrafı (Arızaya göre)"
+        android:backgroundTint="@color/eflatun"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/ariza_onr_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ortalama Onarım Süresi (Arızaya göre)"
+        android:backgroundTint="@color/eflatun"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/marka_rapor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Markaya göre raporlar"
+        android:backgroundTint="@color/turuncu"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/isyeri_rapor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/red"
+        android:text="İşyerine göre raporlar" />
+
+    <Button
+        android:id="@+id/isyeri_onarim_rapor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İşyeri onarıma göre raporlar"
+        android:backgroundTint="@color/red"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/chz_tum_rapor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cihaz için yapılan Tüm Raporlar"
+        android:backgroundTint="#BCB26D"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/toplam_yedekparca_rapor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yedek Parçaya Göre Yapılan Tüm Raporlar"
+        android:backgroundTint="#33936C"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CihazBilgiOzeti"
+    android:background="@drawable/onarim33"
+    android:orientation="vertical">
+
+    <include layout="@layout/baslik"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/yeni_tamir_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/mavi3"
+                android:text="Yeni Tamir Gir"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daha Önce Yapılan İşlemler: "
+                android:textAlignment="center"
+                android:background="@color/edit"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_bilgiozeti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

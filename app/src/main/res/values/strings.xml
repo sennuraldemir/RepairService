@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RepairService</string>
+    <string name="uyarı">kayıt oluşturuldu</string>
+    <string name="uyarı1">kayıt yapıldı</string>
+    <string name="uyarı2">RepairService</string>
+    <string name="uyarı3">RepairService</string>
+    <string name="uyarı4">RepairService</string>
+</resources>

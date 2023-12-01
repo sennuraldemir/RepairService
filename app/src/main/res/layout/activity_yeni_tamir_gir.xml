@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YeniTamirGir"
+    android:background="@drawable/onarim33"
+    android:orientation="vertical">
+
+    <include layout="@layout/baslik"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp">
+
+                <Spinner
+                    android:id="@+id/spn_harekettip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/mavi3"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/white"
+                    android:popupBackground="@color/white"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/hareketaciklama_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="@color/edit"
+                android:hint=" Açıklama Giriniz:"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </EditText>
+
+            <LinearLayout
+               android:id="@+id/layout_yedekparca"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Yedek Parça ve Sayısını Seçiniz."
+                   android:textAlignment="center"
+                   android:textSize="25dp"
+                   android:layout_marginTop="20dp"
+                   android:textColor="@color/white"
+                   android:background="@color/grey">
+               </TextView>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginTop="50dp">
+
+                   <Spinner
+                       android:id="@+id/spn_yedekparca"
+                       android:layout_width="233dp"
+                       android:layout_height="70dp"
+                       android:layout_marginRight="5dp"
+                       android:layout_weight="5"
+                       android:backgroundTint="@color/mavi3"
+                       android:dropDownVerticalOffset="100dp"
+                       android:dropDownSelector="@color/white"
+                       android:popupBackground="@color/white"
+                       android:scrollbarSize="200sp"
+                       android:textAlignment="center" />
+
+                   <ImageButton
+                       android:id="@+id/yedekparcaButton"
+                       android:layout_width="wrap_content"
+                       android:layout_height="50dp"
+                       android:layout_weight="1"
+                       android:background="@color/gri2"
+                       app:srcCompat="@android:drawable/ic_menu_add"
+                       android:layout_marginTop="10dp"/>
+
+               </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spn_parca"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/krem"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/krem"
+                    android:popupBackground="@color/krem"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"/>
+
+                <EditText
+                    android:id="@+id/yedekadetNumber"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/krem"
+                    android:ems="10"
+                    android:inputType="number" />
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_ariza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Arıza Tipini Seçiniz."
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:background="@color/grey">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+
+                    <Spinner
+                        android:id="@+id/spn_arizatip"
+                        android:layout_width="253dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/mavi3"
+                        android:dropDownVerticalOffset="100dp"
+                        android:dropDownSelector="@color/white"
+                        android:popupBackground="@color/white"
+                        android:scrollbarSize="200sp"
+
+                        android:textAlignment="center" />
+
+                    <ImageButton
+                        android:id="@+id/arizaButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/grey"
+                        app:srcCompat="@android:drawable/ic_menu_add"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/guncelle_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/guncelleButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/edit"
+                    android:text="GÜNCELLE">
+
+                </Button>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/onarimbitir_layout"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/onarimbitirButton"
+                android:backgroundTint="@color/gri2"
+                android:text="ONARIM BİTİR"
+                android:layout_marginLeft="20dp">
+
+            </Button>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

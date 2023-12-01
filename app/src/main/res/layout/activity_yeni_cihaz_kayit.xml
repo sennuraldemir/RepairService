@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onarim33"
+    tools:context=".YeniCihazKayit"
+    android:orientation="vertical">
+
+    <include layout="@layout/baslik"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/envno_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:background="#98989C"
+                android:hint=" Envanter No Giriniz:"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_markaid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/arka_plan_spinner"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/gri2"
+                    android:popupBackground="@color/gri2"
+                    android:scrollbarSize="200sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/baseline_add_circle_outline_24"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_modelid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/arka_plan_spinner"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/gri2"
+                    android:popupBackground="@color/gri2"
+                    android:layout_weight="1"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/baseline_add_circle_outline_24"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_isyeriid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/arka_plan_spinner"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/gri2"
+                    android:layout_weight="1"
+                    android:popupBackground="@color/gri2"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/baseline_add_circle_outline_24"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_surumid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/arka_plan_spinner"
+                    android:dropDownVerticalOffset="100dp"
+                    android:dropDownSelector="@color/gri2"
+                    android:layout_weight="1"
+                    android:popupBackground="@color/gri2"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/baseline_add_circle_outline_24"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Spinner
+                    android:id="@+id/spn_ekkranid"
+                    android:layout_width="323dp"
+                    android:layout_height="70dp"
+                    android:dropDownVerticalOffset="100dp"
+                    android:background="@drawable/arka_plan_spinner"
+                    android:dropDownSelector="@color/gri2"
+                    android:popupBackground="@color/gri2"
+                    android:layout_weight="1"
+                    android:scrollbarSize="200sp"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/baseline_add_circle_outline_24"
+                    app:srcCompat="@android:drawable/ic_menu_add"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/imeino_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="#98989C"
+                android:hint=" İmei No Giriniz:"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/gsmno_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="#98989C"
+                android:hint=" GSMNo Giriniz:"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/aciklama_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="#98989C"
+                android:layout_weight="1"
+                android:hint=" Açıklama Giriniz:"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </EditText>
+
+            <Button
+                android:id="@+id/kaydet_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kaydet"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </Button>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
